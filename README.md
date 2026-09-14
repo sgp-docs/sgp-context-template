@@ -1,1 +1,1 @@
-# sgp-templates
+# SGP Sample Context Template
