@@ -22,15 +22,15 @@ The template has five visible tabs
 - PrepMethod
 - Dictionary of Sed Structures
 
-The primary sheets for data entry are **Sites** and **Samples**. Columns for these sheets are described below.
+The main sheets for data entry are **Sites** and **Samples**. Columns for these are described below.
 
 ---
 
 ### Sites
 
-In SGP we are primarily dealing with single measured outcrop sections or cores.
+In SGP we are usually dealing with single measured outcrop sections or cores.
 
-Sites are primarily defined by their geography. Each site has one set of coordinates - we don't currently accomodate more complex geometries such as lines or polygons.
+Sites are primarily defined by their geography. Each site has one set of coordinates - we don't currently accommodate more complex geometries such as lines or polygons.
 
 Samples can be collected from the same site at different times by different people (different collecting events).
 
@@ -75,7 +75,7 @@ ISO country names - use the ISO [English Short name](https://www.iso.org/obp/ui/
 
 #### state or province
 
-The name of the next smaller adminstrative region within a country. Darwin Core term [stateProvince](http://rs.tdwg.org/dwc/terms/stateProvince)
+The name of the next smaller administrative region within a country. Darwin Core term [stateProvince](http://rs.tdwg.org/dwc/terms/stateProvince)
 
 **Examples:**
 
@@ -85,7 +85,7 @@ The name of the next smaller adminstrative region within a country. Darwin Core 
 
 #### county
 
-The name of the next smaller adminstrative region within a state or province. Darwin Core term [county](http://rs.tdwg.org/dwc/terms/county)
+The name of the next smaller administrative region within a state or province. Darwin Core term [county](http://rs.tdwg.org/dwc/terms/county)
 
 **Examples:**
 
@@ -95,7 +95,7 @@ The name of the next smaller adminstrative region within a state or province. Da
 
 #### site description
 
-A description of the site, primarily geographic but with any other details that could be used to refine the location. This description is particulary useful when comparing similar sites, and for verification of latitude and longitude values. See Darwin Core term [Locality](https://dwc.tdwg.org/list/#dwc_locality:~:text=http%3A//rs.tdwg.org/dwc/terms/locality).
+A description of the site, primarily geographic but with any other details that could be used to refine the location. This description is particularly useful when comparing similar sites, and for verification of latitude and longitude values. See Darwin Core term [Locality](https://dwc.tdwg.org/list/#dwc_locality:~:text=http%3A//rs.tdwg.org/dwc/terms/locality).
 
 **Examples:**
 
@@ -229,7 +229,7 @@ A brief description of the motivation for collection.
 
 #### notes
 
-Any significant details that were not captured in the preceding columns. This could include notes about the section name, related sites, details of how coordinates were determined, or any other information that would provide valuable additonal context for this particular site.
+Any significant details that were not captured in the preceding columns. This could include notes about the section name, related sites, details of how coordinates were determined, or any other information that would provide valuable additional context for this particular site.
 
 **Examples:**
 
@@ -242,7 +242,7 @@ Any significant details that were not captured in the preceding columns. This co
 
 ### Samples
 
-In SGP we are primarily dealing with rock hand samples, which are subsequently powdered for bulk geochemical analyses. However, the database also accomodates sub-samples (e.g. for LA-ICP-MS data) with a link to a parent sample, and more specific sample types for targetted analyses e.g. "skeletal (foram)" for carbonate analysis.
+In SGP we are primarily dealing with rock hand samples, which are subsequently powdered for bulk geochemical analyses. However, the database also accommodates sub-samples (e.g. for LA-ICP-MS data) with a link to a parent sample, and more specific sample types for targeted analyses e.g. "skeletal (foram)" for carbonate analysis.
 
 #### parent sample number
 
@@ -257,7 +257,7 @@ Rarely used, but if the samples are sub-samples, especially if multiple "child" 
 
 The name or number of the sample, as it is published - in particular corresponding to any associated data tables.
 
-Tracking samples in SGP is a major challenge. We don't require that original sample names are unique - by necessity to accommodate legacy data - but it is preferable if they are. We recommend that samples are given names that are short, alphanumeric, with minimal and consistantly-used separators, and distinctive in the context of a global database (i.e., not simply "1, 2, 3, 4"). Avoid mixing 1 (one) and the letters i and l, and similarly 0 (zero) and the letter o. Keep the same format across papers. Avoid anything that that looks remotely like a date. Avoid using the height in the stratigraphic section or the depth in the core as the only sample identifier, although it could be combined with a short code relating to site name for example. Height/Depth values are stored separately, and slight variations in precision across tables can make it very difficult to track the same sample.
+Tracking samples in SGP is a major challenge. We don't require that original sample names are unique - by necessity to accommodate legacy data - but it is preferable if they are. We recommend that samples are given names that are short, alphanumeric, with minimal and consistently-used separators, and distinctive in the context of a global database (i.e., not simply "1, 2, 3, 4"). Avoid mixing 1 (one) and the letters i and l, and similarly 0 (zero) and the letter o. Keep the same format across papers. Avoid anything that looks remotely like a date. Avoid using the height in the stratigraphic section or the depth in the core as the only sample identifier, although it could be combined with a short code relating to site name for example. Height/Depth values are stored separately, and slight variations in precision across tables can make it very difficult to track the same sample.
 See [SGP Phase 2 wiki](https://github.com/sgp-docs/sgp_phase2/wiki/A.-Database-description#sample) for description of sample identifiers in SGP.
 
 **Examples:**
@@ -277,7 +277,7 @@ The stratigraphic height in the measured outcrop section, or the depth in the co
 
 #### section name
 
-Dropdown. The name of the site exactly as reported on the first tab (the dropdown is based on the section_name column on the Sites tabe, and cells will turn red if the name does not exactly match).
+Dropdown. The name of the site exactly as reported on the Sites sheet (the dropdown is based on the section name column, and cells will turn red if the name does not exactly match).
 
 **Examples:**
 
@@ -319,9 +319,9 @@ It is also possible to provide a "verbatim" geological unit name, which includes
 - Bantry Shale Member
 - La Ciénega Formation, Unit 3
 
-#### depositonal environment bin
+#### depositional environment bin
 
-Dropdown. Environments are divided into three primary bins - inner shelf (marine), outer shelf (marine) and basinal (marine) - in addition to lacustrine, fluvial and estuarine. The first threes bins are defined based on Sperling et al. 2015:
+Dropdown. Environments are divided into three primary bins - inner shelf (marine), outer shelf (marine) and basinal (marine) - in addition to lacustrine, fluvial and estuarine. The first three bins are defined based on Sperling et al. 2015:
 
 1. Inner Shelf: Sample interbedded with abundant shallow-water
    indicators. This includes clastic beds with wave-generated sedimentary
@@ -370,7 +370,7 @@ A free-text description of the depositional environment, as nuanced or detailed 
 
 #### is_turbiditic (t/f)
 
-Whether or not conditions were turbiditic. This should reflect the broad stratigraphic package, even if the sample itself is a shale deposited from hemipelagic suspension (i.e. the Te unit). Boolean - True/False.
+Whether conditions were turbiditic. This should reflect the broad stratigraphic package, even if the sample itself is a shale deposited from hemipelagic suspension (i.e. the Te unit). Boolean - True/False.
 
 **Examples:**
 
@@ -443,7 +443,7 @@ Ideally a **single** color (black, gray, green), although modifiers are allowed 
 
 #### is_bioturbated (t/f)
 
-Whether or not that particular sample was burrowed, to any extent. True/False.
+Whether or not the sample was burrowed, to any extent. True/False.
 
 **Examples:**
 
@@ -463,7 +463,7 @@ Any fossils associated with the sample, to whatever level of identification is a
 
 #### sedimentary structures
 
-Any sedimentary structures associated with the sample - e.g. cross laminations, grading etc. The dictionary of sedimentary structures in the final tab can be used for reference - and if the relevant term exists, then please use it exactly as it is reported in that dictionary. However, this is an area where new terms are still being added relatively frequently, and therefore its also possible to provide terms that are not yet in the dictionary. Use a comma-separated list for multiple sedimentary structures.
+Any sedimentary structures associated with the sample - e.g. cross laminations, grading etc. The dictionary of sedimentary structures in the final tab can be used for reference - and if the relevant term exists, then please use it exactly as it is reported in that dictionary. However, this is an area where new terms are still being added relatively frequently, and therefore it's also possible to provide terms that are not yet in the dictionary. Use a comma-separated list for multiple sedimentary structures.
 
 **Examples:**
 
@@ -493,7 +493,7 @@ Justification for the interpreted age provided. Ages can be interpreted to vario
 
 **Examples:**
 
-- Frasnian-Fammenian boundary estimated at 475 meters in State Chester core--372.2 Ma in ICS chart 1/27/2016. Ages estimated above and below based on 50 kyr/m average shale depositional rate.
+- Frasnian-Famennian boundary estimated at 475 meters in State Chester core--372.2 Ma in ICS chart 1/27/2016. Ages estimated above and below based on 50 kyr/m average shale depositional rate.
 - This formation is likely Middle Ordovician, and all samples are given an age of 465 Ma.
 - Tapley Hill Fm. records post-glacial (Sturtian) deposition (Preiss, 2000; Preiss et al., 2011) and is conservatively between 660–640 Ma. Interpreted age is taken from the Re-Os age of 645 +- 4.8 Ma on lower strata of the Tapley Hill Fm. from the Blinman-2 core (Kendal et al., 2006).
 - There are no good age constraints on the Papoose Creek Formation. Sample was given an age of 615 Ma based on the correlation figure of Macdonald et al., 2023
@@ -526,7 +526,7 @@ The person responsible for the physical samples. Full name.
 
 #### notes
 
-Any clarifications or comments about the samples - details that may not have been adequently covered by the columns provided.
+Any clarifications or comments about the samples - details that may not have been adequetly covered by the columns provided.
 
 ## PrepMethod
 
