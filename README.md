@@ -277,6 +277,17 @@ The stratigraphic height in the measured outcrop section, or the depth in the co
 - 10.5
 - 101
 
+#### section_name
+
+Dropdown. The name of the site exactly as reported on the first tab (the dropdown is based on the section_name column on the Sites tabe, and cells will turn red if the name does not exactly match).
+
+**Examples:**
+
+- Lönstorp-1
+- S1409
+- Tattenhoe
+- Surprise Creek 2
+
 #### sample type
 
 Dropdown. Samples where a rock sample from a single stratigraphic level has been crushed or analyzed are represented as 'bulk (stratigraphic)' (this also includes most microdrilled samples, where multiple components (matrix/skeletal grains etc.) are likely to be incorporated). This is the most common sample type in SGP.
@@ -288,16 +299,239 @@ If only a specific component of the rock is analyzed, that specific phase (e.g.,
 **Examples:**
 
 - bulk (stratigraphic)
--
+- skeletal (foram)
+- matrix (micrite)
 
-#### Interpreted Age
+#### geological unit name
 
-#### Interpreted Age
+The lithostratigraphic unit name, at the highest resolution known. Ideally provide the formal stratigraphic name, without abbreviations (e.g. Formation, and not Fm or Fm.). National Geological Surveys are often the best source for accepted names. Some commonly used resources in SGP are:
+
+- [Macrostrat Lexicon](https://dev.macrostrat.org/lex/strat-names)
+- [Geolex - USGS National Geologic Map Database](https://ngmdb.usgs.gov/Geolex/search)
+- [Weblex Canada](https://weblex.canada.ca/weblexnet4/weblex_e.aspx)
+- [British Geological Survey Lexicon](https://webapps.bgs.ac.uk/lexicon/home.cfm)
+- [Australian Stratigraphic Units Database](https://asud.ga.gov.au/search-stratigraphic-units)
+- [China Lexicon of Stratigraphic Names](https://chinalex.geolex.org/)
+
+It is also possible to provide a "verbatim" geological unit name, which includes additional detail, if the formal names are not sufficient - for example, to specify a relative but informal position within the unit e.g. lower Frankfort Formation, or to give a hierarchical list such as 'Colorado Group, Belle Fourche Formation'. The latter is especially helpful if, for example, a formation name can be included in different groups depending on geography. In the database the sample will be associated with a formal name, but these more detailed versions will be kept alongside as "verbatim_strat".
+
+**Examples:**
+
+- Baiguridji Formation
+- Bantry Shale Member
+- La Ciénega Formation, Unit 3
+
+#### depositonal environment bin
+
+Dropdown. Environments are divided into three primary bins - inner shelf (marine), outer shelf (marine) and basinal (marine) - in addition to lacustrine, fluvial and estuarine. The first threes bins are defined based on Sperling et al. 2015:
+
+1. Inner Shelf: Sample interbedded with abundant shallow-water
+   indicators. This includes clastic beds with wave-generated sedimentary
+   structures as well as shallow-water carbonates such as stromatolites, oolites,
+   and rip-up conglomerates. Evidence of exposure—i.e. mudcracks, karsting,
+   teepee structures—are often in relatively close stratigraphic proximity on the
+   meters to 10s of meters scale.
+
+2. Outer Shelf: Sample from sequences that generally show little
+   wave activity, but with occasional evidence for storm and/or wave activity,
+   such as hummocky cross-stratified sands encased in shales. Evidence for
+   exposure is not in close stratigraphic proximity.
+
+3. Basinal: Sample from successions with no evidence for any storm
+   and/or wave activity for an appreciable (i.e. >50 m) stratigraphic distance.
+   Generally located considerably basin-ward of shallower-water facies.
+
+**Examples:**
+
+- inner shelf (marine)
+- outer shelf (marine)
+- basinal (marine)
+- lacustrine
+- fluvial
+- estuarine
+
+#### depositional environment detail
+
+Dropdown. A more detailed category of depositional environment (added 2021). This list of terms is from [Macrostrat Environments Lexicon](https://dev.macrostrat.org/lex/environments). These are listed as carbonate marine depositional environments, siliciclastic marine depositional environments, followed by fluvial, lacustrine, glacial, and other depositional environments. They can be useful in particular to provide a more refined interpretation of carbonate settings.
+
+**Examples:**
+
+- deep subtidal ramp (carbonate)
+- offshore shelf (carbonate)
+- submarine fan (siliciclastic)
+
+#### depositional environment description
+
+A free-text description of the depositional environment, as nuanced or detailed as you see fit e.g. "deposition below storm wave base on a broad, shallow, sloping shelf in the absence of persistent infauna".
+
+**Examples:**
+
+- Shallow marine upper shoreface. Late stage siliciclastic infill of the Zaris sub-basin.
+- Distally-steepened, storm-dominated carbonate ramp
+- passive continental margin, below wave base, separated from the coast by a carbonate barrier
+
+#### is_turbiditic
+
+Whether or not conditions were turbiditic. This should reflect the broad stratigraphic package, even if the sample itself is a shale deposited from hemipelagic suspension (i.e. the Te unit). Boolean - True/False.
+
+**Examples:**
+
+- t
+- f
+
+#### biostratigraphy
+
+The biostratigraphic zone. Use formal full names.
+
+**Examples:**
+
+- Streptognathodus gracilis zone
+- Aulacostephanus eudoxus zone
+
+#### geological age
+
+[International age name](www.stratigraphy.org), at the finest level possible.
+
+**Examples:**
+
+- Ordovician
+- Aptian
+
+#### lithology
+
+Dropdown. A restricted version of [Macrostrat Lithology Lexicon](https://dev.macrostrat.org/lex/lithologies) - focused on sedimentary rocks, and, for example, using the Dunham scheme for carbonates.
+
+**Examples:**
+
+- Shale
+- Sandstone
+- Grainstone
+
+#### lithological texture (modifier)
+
+Dropdown. To add a textural modifier to the base lithology. Note, this should only be used if it adds additional information, not to repeat the lithology (e.g., no "silty silstones").
+
+**Examples:**
+
+- Silty
+- Muddy
+- Clayey
+- Sandy
+
+#### lithological composition (modifier)
+
+Dropdown. To add a compositional modifier to the base lithology. Note, this should only be used if it adds additional information, not to repeat the lithology (e.g., no "phosphatic phosphorites").
+
+**Examples:**
+
+- calcareous
+- siliceous
+- carbonaceous
+- pyritiferous
+- micaceous
+- phosphatic
+- dolomitic
+
+#### color
+
+Ideally a **single** color (black, gray, green), although modifiers are allowed - in which case, preferably use Munsell-style names e.g. Moderate reddish brown, Medium gray, Grayish black.
+
+**Examples:**
+
+- black
+- dark gray
+- medium light grey
+- blackish brown
+
+#### is_bioturbated (t/f)
+
+Whether or not that particular sample was burrowed, to any extent. True/False.
+
+**Examples:**
+
+- t
+- f
+
+#### fossils
+
+Any fossils associated with the sample, to whatever level of identification is available. Use a comma-separated list for multiple fossil types.
+
+**Examples:**
+
+- graptolites
+- Leiosphaeridia crassa
+- sponge spicules
+- Triarthrus eatoni
+
+#### sedimentary structures
+
+Any sedimentary structures associated with the sample - e.g. cross laminations, grading etc. The dictionary of sedimentary structures in the final tab can be used for reference - and if the relevant term exists, then please use it exactly as it is reported in that dictionary. However, this is an area where new terms are still being added relatively frequently, and therefore its also possible to provide terms that are not yet in the dictionary. Use a comma-separated list for multiple sedimentary structures.
+
+**Examples:**
+
+- cross laminations
+- load casts
+- graded-normal
+
+#### lithological notes
+
+Any notes about the lithology e.g., a more detailed description if you feel that the dictionary table values do not adequately describe the samples, or details of how the lithology was determined.
+
+**Examples:**
+
+- occasional small pyrite lags and/or phosphatic nodules (1-2mm)
+- Unknown if specific sample is bioturbated, but bioturbation and reworking common in column. Lithologies were determined using carbonate percent measurements from Marz et al., 2016. Samples considered limestone (CaCO3 > 80%) were labeled wackestone or lime mudstone based on strat columns in Ali Hussein et al., 2014. Many samples were considered marl in the strat column of Ali Hussein et al., 2014 but the carbonate percentage is considered a more accurate discriminator of lithology. Note there are many silicified beds and this is not well captured by the lithology coding.
+
+#### interpreted age (Ma)
+
+An estimate for the age of the sample in millions of years. **Numerical value only** with no modifiers or symbols (no age ranges, no < or >)
+
+- 560
+- 496.76
+
+#### interpreted age justification
+
+Justification for the interpreted age provided. Ages can be interpreted to various levels of detail. For instance, the estimate can be based on an assumed sedimentation rate + linear interpolation, or groups of samples can be assigned an age based on proximity to a time marker (ash bed etc.). It is fine to note uncertainty or possible issues with the assignment, which could come in useful for refinements/updates at a later date.
+
+**Examples:**
+
+- Frasnian-Fammenian boundary estimated at 475 meters in State Chester core--372.2 Ma in ICS chart 1/27/2016. Ages estimated above and below based on 50 kyr/m average shale depositional rate.
+- This formation is likely Middle Ordovician, and all samples are given an age of 465 Ma.
+- Tapley Hill Fm. records post-glacial (Sturtian) deposition (Preiss, 2000; Preiss et al., 2011) and is conservatively between 660–640 Ma. Interpreted age is taken from the Re-Os age of 645 +- 4.8 Ma on lower strata of the Tapley Hill Fm. from the Blinman-2 core (Kendal et al., 2006).
+- There are no good age constraints on the Papoose Creek Formation. Sample was given an age of 615 Ma based on the correlation figure of Macdonald et al., 2023
+
+#### maximum age
+
+An estimate for the maximum age of the sample in millions of years. **Numerical value only** with no modifiers or symbols (no age ranges, no < or >)
+
+#### minimum age
+
+An estimate for the minimum age of the sample in millions of years. **Numerical value only** with no modifiers or symbols (no age ranges, no < or >)
+
+#### sample storage location
+
+The place where the physical sample is stored.
+
+**Examples:**
+
+- Department of Earth and Planetary Sciences, Yale University
+- British Geological Survey
+
+#### contact person for sample
+
+The person responsible for the physical samples. Full name.
+
+**Examples:**
+
+- Erik Sperling
+- Rachel Wood
+
+#### notes
+
+Any clarifications or comments about the samples - details that may not have been adequently covered by the columns provided.
 
 ## PrepMethod
 
-PrepMethod is used to gather information about how samples were prepared - e.g. tungsten carbide shatterbox. This is one piece of geochemical methodology that we consider useful, which is very frequently left out of published papers method sections. The rest of the methodology can usually be coded by SGP from the paper.
+PrepMethod is used to gather information about how samples were prepared - e.g. tungsten carbide shatterbox. This is one piece of geochemical methodology that we consider useful, which is very frequently left out of published papers method sections, therefore we request it alongside the samples.
 
-## Ingestion
-
-## Ingestion
+## Data Ingestion
