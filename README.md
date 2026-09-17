@@ -2,7 +2,7 @@
 
 ## Overview
 
-The SGP context template is used to gather geological, geographical and sample-specific information, related to samples that have geochemical data for import into the SGP database. Details of geochemical data and geochemical methods are dealt with separately.
+The SGP context template is used to gather geological, geographical, and sample-specific information, related to samples that have geochemical data for import into the SGP database. Details of geochemical data and geochemical methods are dealt with separately.
 
 Details can be provided for samples from **one or more sites** in one template file.
 
@@ -22,7 +22,7 @@ The template has five visible tabs
 - PrepMethod
 - Dictionary of Sed Structures
 
-The primary tabs for data entry are **Sites** and **Samples**.
+The primary sheets for data entry are **Sites** and **Samples**. Columns for these sheets are described below.
 
 ---
 
@@ -34,7 +34,7 @@ Sites are primarily defined by their geography. Each site has one set of coordin
 
 Samples can be collected from the same site at different times by different people (different collecting events).
 
-#### section_name
+#### section name
 
 The name of the outcrop or the core.
 
@@ -53,7 +53,7 @@ If a new collection is undertaken in the same area but from a different stratigr
 - Tattenhoe
 - Surprise Creek 2
 
-#### site_type
+#### site type
 
 Dropdown. Sites in SGP are primarily divided into "core" or "outcrop". Marine cores are cores from the modern ocean.
 
@@ -73,7 +73,7 @@ ISO country names - use the ISO [English Short name](https://www.iso.org/obp/ui/
 - Canada
 - Australia
 
-#### state_province
+#### state or province
 
 The name of the next smaller adminstrative region within a country. Darwin Core term [stateProvince](http://rs.tdwg.org/dwc/terms/stateProvince)
 
@@ -172,7 +172,7 @@ Dropdown. The type of sedimentary basin.
 - foreland - peripheral
 - intracratonic sag
 
-#### metamorphic_bin
+#### metamorphic bin
 
 Dropdown. Sites are sorted into three low-grade metamorphic bins, roughly based on metapelite zones as follows:
 
@@ -275,7 +275,7 @@ The stratigraphic height in the measured outcrop section, or the depth in the co
 - 10.5
 - 101
 
-#### section_name
+#### section name
 
 Dropdown. The name of the site exactly as reported on the first tab (the dropdown is based on the section_name column on the Sites tabe, and cells will turn red if the name does not exactly match).
 
@@ -368,7 +368,7 @@ A free-text description of the depositional environment, as nuanced or detailed 
 - Distally-steepened, storm-dominated carbonate ramp
 - passive continental margin, below wave base, separated from the coast by a carbonate barrier
 
-#### is_turbiditic
+#### is_turbiditic (t/f)
 
 Whether or not conditions were turbiditic. This should reflect the broad stratigraphic package, even if the sample itself is a shale deposited from hemipelagic suspension (i.e. the Te unit). Boolean - True/False.
 
