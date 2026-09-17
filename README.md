@@ -452,11 +452,11 @@ Whether or not the sample was burrowed, to any extent. True/False.
 
 #### fossils
 
-Any fossils associated with the sample, to whatever level of identification is available. Use a comma-separated list for multiple fossil types.
+Any fossils associated with the sample, to the highest level of identification available. Use a comma-separated list for multiple fossil types.
 
 **Examples:**
 
-- graptolites
+- graptolites, brachiopods, bivalves
 - Leiosphaeridia crassa
 - sponge spicules
 - Triarthrus eatoni
