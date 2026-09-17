@@ -4,8 +4,6 @@
 
 The SGP context template is used to gather geological, geographical and sample-specific information, related to samples that have geochemical data for import into the SGP database. Details of geochemical data and geochemical methods are dealt with separately.
 
-Where possible we ask that collaborators provide this context information, as they are often able to provide important details that are not available in published papers.
-
 Details can be provided for samples from **one or more sites** in one template file.
 
 The information in the template could apply to one published study, but it can also be used to provide details for samples and sites that appear across multiple related publications, or where associated geochemical data is unpublished but provided to the SGP database.
