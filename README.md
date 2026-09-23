@@ -511,6 +511,8 @@ Examples:
 
 An estimate for the age of the sample in millions of years. **Numerical value only** with no modifiers or symbols (no age ranges, no < or >)
 
+Examples:
+
 - 560
 - 496.76
 
