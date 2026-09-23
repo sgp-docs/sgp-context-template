@@ -22,7 +22,7 @@ The template has five visible tabs
 - PrepMethod
 - Dictionary of Sed Structures
 
-The main sheets for data entry are **Sites** and **Samples**. Columns for these are described below.
+The main sheets for data entry are **Sites** and **Samples**. Columns for these are described below, with real examples for each taken from the SGP database.
 
 ---
 
@@ -30,7 +30,7 @@ The main sheets for data entry are **Sites** and **Samples**. Columns for these 
 
 In SGP we are usually dealing with single measured outcrop sections or cores.
 
-Sites are primarily defined by their geography. Each site has one set of coordinates - we don't currently accommodate more complex geometries such as lines or polygons.
+Sites are primarily defined by their geography. Each site has one set of coordinates (we don't currently accommodate more complex geometries such as lines or polygons).
 
 Samples can be collected from the same site at different times by different people (different collecting events).
 
@@ -40,9 +40,7 @@ The name of the outcrop or the core.
 
 **Core** names are usually formalized when the core is made - use the name as recorded by the core storage facility, or core creator.
 
-For **outcrops**, if published, use the name as reported in the paper, and corresponding to any figures or tables. (If the same site has been given different names in different papers, please provide that information in the notes field at the end of the sheet - "alternative site names" can be recorded in the database).
-
-Site names in SGP are not required to be unique - by necessity to accommodate legacy data - but it is preferable if they are. We recommend that sites are given names that are short, alphanumeric, with minimal separators, and distinctive in the context of a global database (i.e., not simply "Locality 1" or "Section A"). Avoid mixing 1 (one) and the letters i and l, and similarly 0 (zero) and the letter o. Using names or abbreviations based on local geography (a creek, a quarry etc.) can be helpful, but bear in mind the scale of the feature and uniqueness of the name, and consider whether someone could easily give the same name to a different collecting point in that region. To give some extreme examples: in the United States it would be best not to simply use "Mississippi River" (very long!) or "Mill Creek" (there are thousands of them!). Adding a short project-specific code or number could be useful in such cases.
+For **outcrops** use the name as reported in any published paper, in particular corresponding to any figures or tables. (If the same site has been given different names in different papers, please provide that information in the notes field at the end of the sheet - "alternative site names" can be recorded in the database).
 
 If a new collection is undertaken in the same area but from a different stratigraphic baseline, give that site a new name and a new set of coordinates, measured from the new baseline.
 
@@ -55,7 +53,7 @@ If a new collection is undertaken in the same area but from a different stratigr
 
 #### site type
 
-Dropdown. Sites in SGP are primarily divided into "core" or "outcrop". Marine cores are cores from the modern ocean.
+Sites in SGP are primarily divided into "core" or "outcrop". Marine cores are cores from the modern ocean.
 
 **Examples:**
 
@@ -95,7 +93,7 @@ The name of the next smaller administrative region within a state or province. D
 
 #### site description
 
-A description of the site, primarily geographic but with any other details that could be used to refine the location. This description is particularly useful when comparing similar sites, and for verification of latitude and longitude values. See Darwin Core term [Locality](https://dwc.tdwg.org/list/#dwc_locality:~:text=http%3A//rs.tdwg.org/dwc/terms/locality).
+A description of the site, primarily geographic but with any other details that could be used to refine the location. This description is particularly useful when comparing similar sites, and for verification of latitude and longitude values. See Darwin Core term [Locality](http://rs.tdwg.org/dwc/terms/locality).
 
 **Examples:**
 
@@ -105,7 +103,7 @@ A description of the site, primarily geographic but with any other details that 
 
 #### latitude
 
-Verbatim latitude of the site. Decimal degrees are preferred, but the original recorded format is also acceptable. (The database stores the original version, as well as the decimal latitude version). See Darwin Core term [verbatimLatitude](http://rs.tdwg.org/dwc/terms/verbatimLatitude).
+Verbatim latitude of the site. Decimal degrees are preferred, but any correctly formatted original version is also acceptable (e.g. degrees, minutes, seconds or decimal minutes). See Darwin Core term [verbatimLatitude](http://rs.tdwg.org/dwc/terms/verbatimLatitude).
 
 **Examples:**
 
@@ -115,7 +113,7 @@ Verbatim latitude of the site. Decimal degrees are preferred, but the original r
 
 #### longitude
 
-Verbatim longitude of the site. Decimal degrees are preferred, but the original recorded format is also acceptable. (The database stores the original version, as well as the decimal longitude version). See Darwin Core term [verbatimLongitude](http://rs.tdwg.org/dwc/terms/verbatimLongitude).
+Verbatim longitude of the site. Decimal degrees are preferred, but any correctly formatted original version is also acceptable (e.g. degrees, minutes, seconds or decimal minutes). See Darwin Core term [verbatimLongitude](http://rs.tdwg.org/dwc/terms/verbatimLongitude).
 
 **Examples:**
 
@@ -125,7 +123,7 @@ Verbatim longitude of the site. Decimal degrees are preferred, but the original 
 
 #### datum
 
-The geodetic datum that applies to the provided latitude and longitude. See Darwin Core term [verbatimSRS](http://rs.tdwg.org/dwc/terms/verbatimSRS). Coordinates taken from Google Maps will have the geodetic datum of WGS84.
+The geodetic datum that applies to the provided latitude and longitude. See Darwin Core term [verbatimSRS](http://rs.tdwg.org/dwc/terms/verbatimSRS). For coordinates taken from Google Maps use the geodetic datum of WGS84.
 
 **Examples:**
 
@@ -135,7 +133,7 @@ The geodetic datum that applies to the provided latitude and longitude. See Darw
 
 #### elevation (m)
 
-The elevation in meters of the site.
+The elevation in meters of the site, if available.
 
 **Examples:**
 
@@ -164,7 +162,7 @@ The name of the sedimentary basin that the site is part of.
 
 #### basin type
 
-Dropdown. The type of sedimentary basin.
+The type of sedimentary basin.
 
 **Examples:**
 
@@ -174,7 +172,7 @@ Dropdown. The type of sedimentary basin.
 
 #### metamorphic bin
 
-Dropdown. Sites are sorted into three low-grade metamorphic bins, roughly based on metapelite zones as follows:
+Sites are sorted into three low-grade metamorphic bins, roughly based on metapelite zones as follows:
 
 1. Diagenetic zone. Under mature, preserved biomarkers, KI>0.42, CAI ≤3, Ro <2.0, facies: zeolite-subgreenschist facies, grade: diagenesis-very low grade
 
@@ -190,16 +188,17 @@ Dropdown. Sites are sorted into three low-grade metamorphic bins, roughly based 
 
 #### collection start date
 
-The date when collecting started at this particular site for these particular samples. Ideally YYYY-MM-DD, if known, but lower resolution or verbatim collecting dates are also accepted (e.g. Summer 2009)
+The date when collecting started at this particular site for these particular samples. Ideally YYYY-MM-DD, if known, but lower resolution or verbatim collecting dates are also accepted (e.g. Summer 2009).
 
 **Examples:**
 
 - 2021-04-01
+- 2010
 - October 2008
 
 #### collection end date
 
-The date when collecting ended at this particular site for these particular samples. Ideally YYYY-MM-DD, if known, but lower resolution or verbatim collecting dates are also accepted (e.g. Summer 2009)
+The date when collecting ended at this particular site for these particular samples. Ideally YYYY-MM-DD, if known, but lower resolution or verbatim collecting dates are also accepted (e.g. Summer 2009).
 
 **Examples:**
 
@@ -208,7 +207,7 @@ The date when collecting ended at this particular site for these particular samp
 
 #### collectors
 
-List of collectors, in order if order is significant i.e. lead/primary collector first. Use full names and separate multiple collectors with commas.
+List of collectors, in order if order is significant i.e. lead/primary collector first. Use **full names** without titles, and separate multiple collectors with commas.
 
 **Examples:**
 
@@ -229,7 +228,7 @@ A brief description of the motivation for collection.
 
 #### notes
 
-Any significant details that were not captured in the preceding columns. This could include notes about the section name, related sites, details of how coordinates were determined, or any other information that would provide valuable additional context for this particular site.
+Any significant details that were not captured in the preceding columns. This could include notes about the name, related sites, details of how coordinates were determined, or any other information that would provide valuable additional context for this particular site.
 
 **Examples:**
 
@@ -255,10 +254,7 @@ Rarely used, but if the samples are sub-samples, especially if multiple "child" 
 
 #### original sample number
 
-The name or number of the sample, as it is published - in particular corresponding to any associated data tables.
-
-Tracking samples in SGP is a major challenge. We don't require that original sample names are unique - by necessity to accommodate legacy data - but it is preferable if they are. We recommend that samples are given names that are short, alphanumeric, with minimal and consistently-used separators, and distinctive in the context of a global database (i.e., not simply "1, 2, 3, 4"). Avoid mixing 1 (one) and the letters i and l, and similarly 0 (zero) and the letter o. Keep the same format across papers. Avoid anything that looks remotely like a date. Avoid using the height in the stratigraphic section or the depth in the core as the only sample identifier, although it could be combined with a short code relating to site name for example. Height/Depth values are stored separately, and slight variations in precision across tables can make it very difficult to track the same sample.
-See [SGP Phase 2 wiki](https://github.com/sgp-docs/sgp_phase2/wiki/A.-Database-description#sample) for description of sample identifiers in SGP.
+The name or number of the sample, as it is published - in particular corresponding exactly to any associated data tables.
 
 **Examples:**
 
@@ -277,7 +273,7 @@ The stratigraphic height in the measured outcrop section, or the depth in the co
 
 #### section name
 
-Dropdown. The name of the site exactly as reported on the Sites sheet (the dropdown is based on the section name column, and cells will turn red if the name does not exactly match).
+The name exactly as reported on the Sites sheet (the dropdown on this column is based on the section name column. Cells will turn red if the name does not exactly match).
 
 **Examples:**
 
@@ -288,11 +284,11 @@ Dropdown. The name of the site exactly as reported on the Sites sheet (the dropd
 
 #### sample type
 
-Dropdown. Samples where a rock sample from a single stratigraphic level has been crushed or analyzed are represented as 'bulk (stratigraphic)' (this also includes most microdrilled samples, where multiple components (matrix/skeletal grains etc.) are likely to be incorporated). This is the most common sample type in SGP.
+The most common sample type in SGP is 'bulk (stratigraphic)'. This category represents rock samples from single stratigraphic level, crushed and powdered for analysis. The category also includes most microdrilled samples, where multiple components (matrix/skeletal grains etc.) are likely to be incorporated into any analyses.
 
-Multiple samples from a larger stratigraphic range which are crushed together are represented as 'bulk (chips, cuttings, composite)'.
+By contrast, multiple samples from a larger stratigraphic range which are crushed together for analysis are represented as 'bulk (chips, cuttings, composite)'.
 
-If only a specific component of the rock is analyzed, that specific phase (e.g., pyrite or a bioclast like a brachiopod) should be selected.
+If only a specific component of the rock is targetted for analysis, then more precise sample types apply (e.g., mineral (pyrite) or skeletal (brachiopod)).
 
 **Examples:**
 
@@ -310,8 +306,9 @@ The lithostratigraphic unit name, at the highest resolution known. Ideally provi
 - [British Geological Survey Lexicon](https://webapps.bgs.ac.uk/lexicon/home.cfm)
 - [Australian Stratigraphic Units Database](https://asud.ga.gov.au/search-stratigraphic-units)
 - [China Lexicon of Stratigraphic Names](https://chinalex.geolex.org/)
+- [International Geology Website and Database](https://geolex.org/)
 
-It is also possible to provide a "verbatim" geological unit name, which includes additional detail, if the formal names are not sufficient - for example, to specify a relative but informal position within the unit e.g. lower Frankfort Formation, or to give a hierarchical list such as 'Colorado Group, Belle Fourche Formation'. The latter is especially helpful if, for example, a formation name can be included in different groups depending on geography. In the database the sample will be associated with a formal name, but these more detailed versions will be kept alongside as "verbatim_strat".
+It is also possible to provide a "verbatim" geological unit name, which includes additional detail, if the formal names are not sufficient - for example, to specify a relative but informal position within the unit such as 'lower Frankfort Formation', or to give a hierarchical list such as 'Colorado Group, Belle Fourche Formation'. The latter is especially helpful if, for example, a formation name can be included in different groups depending on geography. In the database the sample will be associated with a formal name, but these more detailed versions will be kept alongside as "verbatim_strat".
 
 **Examples:**
 
@@ -321,7 +318,7 @@ It is also possible to provide a "verbatim" geological unit name, which includes
 
 #### depositional environment bin
 
-Dropdown. Environments are divided into three primary bins - inner shelf (marine), outer shelf (marine) and basinal (marine) - in addition to lacustrine, fluvial and estuarine. The first three bins are defined based on Sperling et al. 2015:
+Environments are divided into three primary bins - inner shelf (marine), outer shelf (marine) and basinal (marine) - in addition to lacustrine, fluvial and estuarine. The first three bins are defined based on Sperling et al. 2015:
 
 1. Inner Shelf: Sample interbedded with abundant shallow-water
    indicators. This includes clastic beds with wave-generated sedimentary
@@ -350,7 +347,7 @@ Dropdown. Environments are divided into three primary bins - inner shelf (marine
 
 #### depositional environment detail
 
-Dropdown. A more detailed category of depositional environment (added 2021). This list of terms is from [Macrostrat Environments Lexicon](https://dev.macrostrat.org/lex/environments). These are listed as carbonate marine depositional environments, siliciclastic marine depositional environments, followed by fluvial, lacustrine, glacial, and other depositional environments. They can be useful in particular to provide a more refined interpretation of carbonate settings.
+A more detailed category of depositional environment (added 2021). This list of terms is from [Macrostrat Environments Lexicon](https://dev.macrostrat.org/lex/environments). The dropdown lists carbonate marine depositional environments, siliciclastic marine depositional environments, followed by fluvial, lacustrine, glacial, and other depositional environments. This dictionary is particularly useful for providing a more refined interpretation of carbonate settings.
 
 **Examples:**
 
@@ -360,7 +357,7 @@ Dropdown. A more detailed category of depositional environment (added 2021). Thi
 
 #### depositional environment description
 
-A free-text description of the depositional environment, as nuanced or detailed as you see fit e.g. "deposition below storm wave base on a broad, shallow, sloping shelf in the absence of persistent infauna".
+A free-text description of the depositional environment, as nuanced or detailed as you see fit e.g. 'deposition below storm wave base on a broad, shallow, sloping shelf in the absence of persistent infauna'.
 
 **Examples:**
 
@@ -370,7 +367,7 @@ A free-text description of the depositional environment, as nuanced or detailed 
 
 #### is_turbiditic (t/f)
 
-Whether conditions were turbiditic. This should reflect the broad stratigraphic package, even if the sample itself is a shale deposited from hemipelagic suspension (i.e. the Te unit). Boolean - True/False.
+Whether conditions were turbiditic. This should reflect the broad stratigraphic package, even if the sample itself is a shale deposited from hemipelagic suspension (i.e. the Te unit). (Boolean field: accepted values: t/f, TRUE/FALSE, 1/0)
 
 **Examples:**
 
@@ -379,7 +376,7 @@ Whether conditions were turbiditic. This should reflect the broad stratigraphic 
 
 #### biostratigraphy
 
-The biostratigraphic zone. Use formal full names.
+The biostratigraphic zone. (see Zone and Subzone within the [Macrostrat Intervals lexicon](https://dev.macrostrat.org/lex/intervals) - e.g. [Aulacostephanus eudoxus](https://dev.macrostrat.org/lex/intervals/841)).
 
 **Examples:**
 
@@ -397,7 +394,7 @@ The biostratigraphic zone. Use formal full names.
 
 #### lithology
 
-Dropdown. A restricted version of [Macrostrat Lithology Lexicon](https://dev.macrostrat.org/lex/lithologies) - focused on sedimentary rocks, and, for example, using the Dunham scheme for carbonates.
+A restricted version of [Macrostrat Lithology Lexicon](https://dev.macrostrat.org/lex/lithologies) - focused on sedimentary rocks, and, for example, using the Dunham scheme only for carbonates.
 
 **Examples:**
 
@@ -407,7 +404,7 @@ Dropdown. A restricted version of [Macrostrat Lithology Lexicon](https://dev.mac
 
 #### lithological texture (modifier)
 
-Dropdown. To add a textural modifier to the base lithology. Note, this should only be used if it adds additional information, not to repeat the lithology (e.g., no "silty silstones").
+This is used to add a textural modifier to the base lithology. It should ONLY be used if it adds additional information, not to repeat the lithology (e.g., no need for "silty silstones").
 
 **Examples:**
 
@@ -418,7 +415,7 @@ Dropdown. To add a textural modifier to the base lithology. Note, this should on
 
 #### lithological composition (modifier)
 
-Dropdown. To add a compositional modifier to the base lithology. Note, this should only be used if it adds additional information, not to repeat the lithology (e.g., no "phosphatic phosphorites").
+This is used to add a compositional modifier to the base lithology. It should ONLY be used if it adds additional information, not to repeat the lithology (e.g., no need for "phosphatic phosphorites").
 
 **Examples:**
 
@@ -432,18 +429,18 @@ Dropdown. To add a compositional modifier to the base lithology. Note, this shou
 
 #### color
 
-Ideally a **single** color (black, gray, green), although modifiers are allowed - in which case, preferably use Munsell-style names e.g. Moderate reddish brown, Medium gray, Grayish black.
+Ideally a **single** color (black, grey, green), although modifiers are allowed, in which case, preferably use Munsell-style names e.g., Moderate reddish brown, Medium grey, Greyish black.
 
 **Examples:**
 
 - black
-- dark gray
+- dark grey
 - medium light grey
 - blackish brown
 
 #### is_bioturbated (t/f)
 
-Whether or not the sample was burrowed, to any extent. True/False.
+Whether or not the sample was burrowed, to any extent. (Boolean field: accepted values: t/f, TRUE/FALSE, 1/0)
 
 **Examples:**
 
@@ -463,7 +460,7 @@ Any fossils associated with the sample, to the highest level of identification a
 
 #### sedimentary structures
 
-Any sedimentary structures associated with the sample - e.g. cross laminations, grading etc. The dictionary of sedimentary structures in the final tab can be used for reference - and if the relevant term exists, then please use it exactly as it is reported in that dictionary. However, this is an area where new terms are still being added relatively frequently, and therefore it's also possible to provide terms that are not yet in the dictionary. Use a comma-separated list for multiple sedimentary structures.
+Any sedimentary structures associated with the sample - e.g. cross laminations, grading. The dictionary of sedimentary structures in the final tab can be used for reference. Please use terms exactly as reported, and use a comma-separated list for multiple sedimentary structures (A dropdown is not provided, since more than one terms can apply to a single sample). (The dictionary was initially populated with some terms from [Macrostrat lexicon of lithology attributes](https://dev.macrostrat.org/lex/lith-atts)).
 
 **Examples:**
 
@@ -502,9 +499,19 @@ Justification for the interpreted age provided. Ages can be interpreted to vario
 
 An estimate for the maximum age of the sample in millions of years. **Numerical value only** with no modifiers or symbols (no age ranges, no < or >)
 
+**Examples:**
+
+- 343.50
+- 423
+
 #### minimum age
 
 An estimate for the minimum age of the sample in millions of years. **Numerical value only** with no modifiers or symbols (no age ranges, no < or >)
+
+**Examples:**
+
+- 355
+- 419.20
 
 #### sample storage location
 
@@ -526,10 +533,18 @@ The person responsible for the physical samples. Full name.
 
 #### notes
 
-Any clarifications or comments about the samples - details that may not have been adequetly covered by the columns provided.
+Any clarifications or comments about the sample - details that may not have been adequetly covered by the columns provided, or very specific to a particular study.
+
+**Examples:**
+
+- Original sample number from A. Knoll notebook. HU= Harvard University number.
+- Biostratigraphy extrapolated from nearby cores. See Remírez et al. (2023) for more details.
+- < 15m below interval of bedded massive sulphides
 
 ## PrepMethod
 
-PrepMethod is used to gather information about how samples were prepared - e.g. tungsten carbide shatterbox. This is one piece of geochemical methodology that we consider useful, which is very frequently left out of published papers method sections, therefore we request it alongside the samples.
+PrepMethod records information about how a sample was prepared for analysis, such as grinding in a tungsten carbide shatterbox or an agate mortar. We collect this information here because sample preparation is an important part of the analytical methodology, but it is frequently omitted from published methods sections.
 
-## Data Ingestion
+In most cases, a single preparation method will have been used for all analyses of a set of samples. In this case, simply provide the preparation method once. However, different preparation methods may sometimes be used for different analyses, for example if analyses were carried out in different laboratories. This is why PrepMethod is not a single column on the sample tab: a sample may have more than one preparation method associated with its analytical data.
+
+Where different preparation methods were used, specify which preparation method applies to each set of associated analytical data. For example, you might indicate that tungsten carbide was used for all elemental analyses, while agate mortar was used for carbon isotope analyses.
