@@ -14,7 +14,7 @@ On ingestion, samples are grouped together into projects, based on publications 
 
 ## Template Structure
 
-The template has five visible tabs
+The template has five visible tabs:
 
 - User Guide
 - Sites
@@ -22,7 +22,15 @@ The template has five visible tabs
 - PrepMethod
 - Dictionary of Sed Structures
 
-The main sheets for data entry are **Sites** and **Samples**. Columns for these are described below, with real examples for each taken from the SGP database.
+The **User Guide** provides information about how to fill the template - it is an abbreviated version of this document.
+
+The main sheets for data entry are **Sites** and **Samples**. Columns for these are described in the sections below, with real examples taken from the SGP database.
+
+The **PrepMethod** is used to collect information about how samples are prepared for analysis.
+
+The **Dictionary of Sed Structures** is a dictionary list for sedimentary structures for reference - more than one sedimentary structure can be associated with a single sample and therefore these terms are not provided as a dropdown list.
+
+Hidden tabs include the other dictionaries used in dropdowns.
 
 ---
 
