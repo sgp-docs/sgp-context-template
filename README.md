@@ -24,7 +24,7 @@ The template has five visible tabs:
 
 The **User Guide** provides information about how to fill the template - it is an abbreviated version of this document.
 
-The main sheets for data entry are **Sites** and **Samples**. Columns for these are described in the sections below, with real examples taken from the SGP database.
+The main sheets for data entry are **Sites** and **Samples**. Columns for these are described in the sections below, with real examples taken from the SGP database. Some are based on controlled vocabularies (dictionaries) and values must be chosen from a dropdown list (these are indicated as "Dropdown" in the descriptions below).
 
 The **PrepMethod** is used to collect information about how samples are prepared for analysis.
 
@@ -60,6 +60,8 @@ If a new collection is undertaken in the same area but from a different stratigr
 - Surprise Creek 2
 
 #### site type
+
+_Dictionary/Dropdown_
 
 Sites in SGP are primarily divided into "core" or "outcrop". Marine cores are cores from the modern ocean.
 
@@ -170,6 +172,8 @@ The name of the sedimentary basin that the site is part of.
 
 #### basin type
 
+_Dictionary/Dropdown_
+
 The type of sedimentary basin.
 
 **Examples:**
@@ -179,6 +183,8 @@ The type of sedimentary basin.
 - intracratonic sag
 
 #### metamorphic bin
+
+_Dictionary/Dropdown_
 
 Sites are sorted into three low-grade metamorphic bins, roughly based on metapelite zones as follows:
 
@@ -281,7 +287,9 @@ The stratigraphic height in the measured outcrop section, or the depth in the co
 
 #### section name
 
-The name exactly as reported on the Sites sheet (the dropdown on this column is based on the section name column. Cells will turn red if the name does not exactly match).
+_Dropdown_
+
+The name exactly as reported on the Sites sheet (the dropdown on this column is not based on a dictionary, but rather links to the section name column on the Sites tab. Cells will turn red if the name does not exactly match).
 
 **Examples:**
 
@@ -291,6 +299,8 @@ The name exactly as reported on the Sites sheet (the dropdown on this column is 
 - Surprise Creek 2
 
 #### sample type
+
+_Dictionary/Dropdown_
 
 The most common sample type in SGP is 'bulk (stratigraphic)'. This category represents rock samples from single stratigraphic level, crushed and powdered for analysis. The category also includes most microdrilled samples, where multiple components (matrix/skeletal grains etc.) are likely to be incorporated into any analyses.
 
@@ -325,6 +335,8 @@ It is also possible to provide a "verbatim" geological unit name, which includes
 - La Ciénega Formation, Unit 3
 
 #### depositional environment bin
+
+_Dictionary/Dropdown_
 
 Environments are divided into three primary bins - inner shelf (marine), outer shelf (marine) and basinal (marine) - in addition to lacustrine, fluvial and estuarine. The first three bins are defined based on Sperling et al. 2015:
 
@@ -375,7 +387,9 @@ A free-text description of the depositional environment, as nuanced or detailed 
 
 #### is_turbiditic (t/f)
 
-Whether conditions were turbiditic. This should reflect the broad stratigraphic package, even if the sample itself is a shale deposited from hemipelagic suspension (i.e. the Te unit). (Boolean field: accepted values: t/f, TRUE/FALSE, 1/0)
+_Validated_
+
+Whether conditions were turbiditic. This should reflect the broad stratigraphic package, even if the sample itself is a shale deposited from hemipelagic suspension (i.e. the Te unit). This column will only allow 't' or 'f'.
 
 **Examples:**
 
@@ -402,6 +416,8 @@ The biostratigraphic zone. (see Zone and Subzone within the [Macrostrat Interval
 
 #### lithology
 
+_Dictionary/Dropdown_
+
 A restricted version of [Macrostrat Lithology Lexicon](https://dev.macrostrat.org/lex/lithologies) - focused on sedimentary rocks, and, for example, using the Dunham scheme only for carbonates.
 
 **Examples:**
@@ -411,6 +427,8 @@ A restricted version of [Macrostrat Lithology Lexicon](https://dev.macrostrat.or
 - Grainstone
 
 #### lithological texture (modifier)
+
+_Dictionary/Dropdown_
 
 This is used to add a textural modifier to the base lithology. It should ONLY be used if it adds additional information, not to repeat the lithology (e.g., no need for "silty silstones").
 
@@ -422,6 +440,8 @@ This is used to add a textural modifier to the base lithology. It should ONLY be
 - Sandy
 
 #### lithological composition (modifier)
+
+_Dictionary/Dropdown_
 
 This is used to add a compositional modifier to the base lithology. It should ONLY be used if it adds additional information, not to repeat the lithology (e.g., no need for "phosphatic phosphorites").
 
@@ -448,7 +468,9 @@ Ideally a **single** color (black, grey, green), although modifiers are allowed,
 
 #### is_bioturbated (t/f)
 
-Whether or not the sample was burrowed, to any extent. (Boolean field: accepted values: t/f, TRUE/FALSE, 1/0)
+_Validated_
+
+Whether or not the sample was burrowed, to any extent. This column will only allow 't' or 'f'.
 
 **Examples:**
 
@@ -468,7 +490,9 @@ Any fossils associated with the sample, to the highest level of identification a
 
 #### sedimentary structures
 
-Any sedimentary structures associated with the sample - e.g. cross laminations, grading. The dictionary of sedimentary structures in the final tab can be used for reference. Please use terms exactly as reported, and use a comma-separated list for multiple sedimentary structures (A dropdown is not provided, since more than one terms can apply to a single sample). (The dictionary was initially populated with some terms from [Macrostrat lexicon of lithology attributes](https://dev.macrostrat.org/lex/lith-atts)).
+_Dictionary_
+
+Any sedimentary structures associated with the sample - e.g. cross laminations, grading. The dictionary of sedimentary structures in the final tab should be used for reference. Please use terms exactly as reported, and use a comma-separated list for multiple sedimentary structures (A dropdown is not provided, since more than one term can apply to a single sample). (The dictionary was initially populated with some terms from [Macrostrat lexicon of lithology attributes](https://dev.macrostrat.org/lex/lith-atts)).
 
 **Examples:**
 
