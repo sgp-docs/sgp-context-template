@@ -30,8 +30,6 @@ The **PrepMethod** is used to collect information about how samples are prepared
 
 The **Dictionary of Sed Structures** is a dictionary list for sedimentary structures for reference - more than one sedimentary structure can be associated with a single sample and therefore these terms are not provided as a dropdown list.
 
-Hidden tabs include the other dictionaries used in dropdowns.
-
 ---
 
 ### Sites
