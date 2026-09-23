@@ -50,7 +50,7 @@ For **outcrops** use the name as reported in any published paper, in particular 
 
 If a new collection is undertaken in the same area but from a different stratigraphic baseline, give that site a new name and a new set of coordinates, measured from the new baseline.
 
-**Examples:**
+Examples:
 
 - Lönstorp-1
 - S1409
@@ -63,7 +63,7 @@ _Dictionary/Dropdown_
 
 Sites in SGP are primarily divided into "core" or "outcrop". Marine cores are cores from the modern ocean.
 
-**Examples:**
+Examples:
 
 - core
 - outcrop
@@ -73,7 +73,7 @@ Sites in SGP are primarily divided into "core" or "outcrop". Marine cores are co
 
 ISO country names - use the ISO [English Short name](https://www.iso.org/obp/ui/#search)
 
-**Examples:**
+Examples:
 
 - United States
 - Canada
@@ -83,7 +83,7 @@ ISO country names - use the ISO [English Short name](https://www.iso.org/obp/ui/
 
 The name of the next smaller administrative region within a country. Darwin Core term [stateProvince](http://rs.tdwg.org/dwc/terms/stateProvince)
 
-**Examples:**
+Examples:
 
 - Colorado
 - Guizhou
@@ -93,7 +93,7 @@ The name of the next smaller administrative region within a country. Darwin Core
 
 The name of the next smaller administrative region within a state or province. Darwin Core term [county](http://rs.tdwg.org/dwc/terms/county)
 
-**Examples:**
+Examples:
 
 - Lancashire
 - White Pine
@@ -103,7 +103,7 @@ The name of the next smaller administrative region within a state or province. D
 
 A description of the site, primarily geographic but with any other details that could be used to refine the location. This description is particularly useful when comparing similar sites, and for verification of latitude and longitude values. See Darwin Core term [Locality](http://rs.tdwg.org/dwc/terms/locality).
 
-**Examples:**
+Examples:
 
 - approx. 3 km to the northeast of Coppercap Mountain in the Mackenzie Mountains
 - Trench by the river, near Conego Marinho (30km from Januária)
@@ -113,7 +113,7 @@ A description of the site, primarily geographic but with any other details that 
 
 Verbatim latitude of the site. Decimal degrees are preferred, but any correctly formatted original version is also acceptable (e.g. degrees, minutes, seconds or decimal minutes). See Darwin Core term [verbatimLatitude](http://rs.tdwg.org/dwc/terms/verbatimLatitude).
 
-**Examples:**
+Examples:
 
 - 41.74167
 - 53°52'13.4"N
@@ -123,7 +123,7 @@ Verbatim latitude of the site. Decimal degrees are preferred, but any correctly 
 
 Verbatim longitude of the site. Decimal degrees are preferred, but any correctly formatted original version is also acceptable (e.g. degrees, minutes, seconds or decimal minutes). See Darwin Core term [verbatimLongitude](http://rs.tdwg.org/dwc/terms/verbatimLongitude).
 
-**Examples:**
+Examples:
 
 - -105.85361
 - 122°30'44.5"W
@@ -133,7 +133,7 @@ Verbatim longitude of the site. Decimal degrees are preferred, but any correctly
 
 The geodetic datum that applies to the provided latitude and longitude. See Darwin Core term [verbatimSRS](http://rs.tdwg.org/dwc/terms/verbatimSRS). For coordinates taken from Google Maps use the geodetic datum of WGS84.
 
-**Examples:**
+Examples:
 
 - WGS84
 - NAD27
@@ -143,7 +143,7 @@ The geodetic datum that applies to the provided latitude and longitude. See Darw
 
 The elevation in meters of the site, if available.
 
-**Examples:**
+Examples:
 
 - 1472.18
 
@@ -151,7 +151,7 @@ The elevation in meters of the site, if available.
 
 The craton or terrane that the site is part of.
 
-**Examples:**
+Examples:
 
 - Laurentia
 - Avalonia
@@ -161,7 +161,7 @@ The craton or terrane that the site is part of.
 
 The name of the sedimentary basin that the site is part of.
 
-**Examples:**
+Examples:
 
 - Taconic Foreland Basin
 - Borden Basin
@@ -174,7 +174,7 @@ _Dictionary/Dropdown_
 
 The type of sedimentary basin.
 
-**Examples:**
+Examples:
 
 - rift
 - foreland - peripheral
@@ -192,7 +192,7 @@ Sites are sorted into three low-grade metamorphic bins, roughly based on metapel
 
 3. Epizone. Ro>4, CAI=5, KI<0.25, facies: greenschist, grade: low-grade
 
-**Examples:**
+Examples:
 
 - Diagenetic zone
 - Anchizone
@@ -202,7 +202,7 @@ Sites are sorted into three low-grade metamorphic bins, roughly based on metapel
 
 The date when collecting started at this particular site for these particular samples. Ideally YYYY-MM-DD, if known, but lower resolution or verbatim collecting dates are also accepted (e.g. Summer 2009).
 
-**Examples:**
+Examples:
 
 - 2021-04-01
 - 2010
@@ -212,7 +212,7 @@ The date when collecting started at this particular site for these particular sa
 
 The date when collecting ended at this particular site for these particular samples. Ideally YYYY-MM-DD, if known, but lower resolution or verbatim collecting dates are also accepted (e.g. Summer 2009).
 
-**Examples:**
+Examples:
 
 - 2009-10-14
 - December 2008
@@ -221,7 +221,7 @@ The date when collecting ended at this particular site for these particular samp
 
 List of collectors, in order if order is significant i.e. lead/primary collector first. Use **full names** without titles, and separate multiple collectors with commas.
 
-**Examples:**
+Examples:
 
 - Julie Dumoulin, John Slack
 - Robert Gaines
@@ -230,7 +230,7 @@ List of collectors, in order if order is significant i.e. lead/primary collector
 
 A brief description of the motivation for collection.
 
-**Examples:**
+Examples:
 
 - long-duration Earth history study
 - black shale geochemistry study (paleo-redox and paleo-salinity)
@@ -242,7 +242,7 @@ A brief description of the motivation for collection.
 
 Any significant details that were not captured in the preceding columns. This could include notes about the name, related sites, details of how coordinates were determined, or any other information that would provide valuable additional context for this particular site.
 
-**Examples:**
+Examples:
 
 - Little information is available on these cores. The lat/long were estimated from Fig. 1 of Nyhuis et al., 2014 based on the apparent river morphology and using Google Earth. Exact metamorphic grade not clear. Siedenberg et al. 2016 report this core has reached the gas window so it was coded as diagenetic zone, but it may be anchizone
 - Lat-long from Yale Peabody Museum https://collections.peabody.yale.edu/search/Record/YPM-IP-533117
@@ -259,7 +259,7 @@ In SGP we are primarily dealing with rock hand samples, which are subsequently p
 
 Rarely used, but if the samples are sub-samples, especially if multiple "child" samples were measured from one parent, then give the name of the parent sample here. Note the parent sample must ALSO have a row in the template, or exist in the database already.
 
-**Examples:**
+Examples:
 
 - DB10
 - F1003-0.2
@@ -268,7 +268,7 @@ Rarely used, but if the samples are sub-samples, especially if multiple "child" 
 
 The name or number of the sample, as it is published - in particular corresponding exactly to any associated data tables.
 
-**Examples:**
+Examples:
 
 - DB10
 - S86A-901.8
@@ -278,7 +278,7 @@ The name or number of the sample, as it is published - in particular correspondi
 
 The stratigraphic height in the measured outcrop section, or the depth in the core. Numeric values only, in meters.
 
-**Examples:**
+Examples:
 
 - 10.5
 - 101
@@ -289,7 +289,7 @@ _Dropdown_
 
 The name exactly as reported on the Sites sheet (the dropdown on this column is not based on a dictionary, but rather links to the section name column on the Sites tab. Cells will turn red if the name does not exactly match).
 
-**Examples:**
+Examples:
 
 - Lönstorp-1
 - S1409
@@ -306,7 +306,7 @@ By contrast, multiple samples from a larger stratigraphic range which are crushe
 
 If only a specific component of the rock is targetted for analysis, then more precise sample types apply (e.g., mineral (pyrite) or skeletal (brachiopod)).
 
-**Examples:**
+Examples:
 
 - bulk (stratigraphic)
 - skeletal (foram)
@@ -326,7 +326,7 @@ The lithostratigraphic unit name, at the highest resolution known. Ideally provi
 
 It is also possible to provide a "verbatim" geological unit name, which includes additional detail, if the formal names are not sufficient - for example, to specify a relative but informal position within the unit such as 'lower Frankfort Formation', or to give a hierarchical list such as 'Colorado Group, Belle Fourche Formation'. The latter is especially helpful if, for example, a formation name can be included in different groups depending on geography. In the database the sample will be associated with a formal name, but these more detailed versions will be kept alongside as "verbatim_strat".
 
-**Examples:**
+Examples:
 
 - Baiguridji Formation
 - Bantry Shale Member
@@ -354,7 +354,7 @@ Environments are divided into three primary bins - inner shelf (marine), outer s
    and/or wave activity for an appreciable (i.e. >50 m) stratigraphic distance.
    Generally located considerably basin-ward of shallower-water facies.
 
-**Examples:**
+Examples:
 
 - inner shelf (marine)
 - outer shelf (marine)
@@ -367,7 +367,7 @@ Environments are divided into three primary bins - inner shelf (marine), outer s
 
 A more detailed category of depositional environment (added 2021). This list of terms is from [Macrostrat Environments Lexicon](https://dev.macrostrat.org/lex/environments). The dropdown lists carbonate marine depositional environments, siliciclastic marine depositional environments, followed by fluvial, lacustrine, glacial, and other depositional environments. This dictionary is particularly useful for providing a more refined interpretation of carbonate settings.
 
-**Examples:**
+Examples:
 
 - deep subtidal ramp (carbonate)
 - offshore shelf (carbonate)
@@ -377,7 +377,7 @@ A more detailed category of depositional environment (added 2021). This list of 
 
 A free-text description of the depositional environment, as nuanced or detailed as you see fit e.g. 'deposition below storm wave base on a broad, shallow, sloping shelf in the absence of persistent infauna'.
 
-**Examples:**
+Examples:
 
 - Shallow marine upper shoreface. Late stage siliciclastic infill of the Zaris sub-basin.
 - Distally-steepened, storm-dominated carbonate ramp
@@ -389,7 +389,7 @@ _Validated_
 
 Whether conditions were turbiditic. This should reflect the broad stratigraphic package, even if the sample itself is a shale deposited from hemipelagic suspension (i.e. the Te unit). This column will only allow 't' or 'f'.
 
-**Examples:**
+Examples:
 
 - t
 - f
@@ -398,7 +398,7 @@ Whether conditions were turbiditic. This should reflect the broad stratigraphic 
 
 The biostratigraphic zone. (see Zone and Subzone within the [Macrostrat Intervals lexicon](https://dev.macrostrat.org/lex/intervals) - e.g. [Aulacostephanus eudoxus](https://dev.macrostrat.org/lex/intervals/841)).
 
-**Examples:**
+Examples:
 
 - Streptognathodus gracilis zone
 - Aulacostephanus eudoxus zone
@@ -407,7 +407,7 @@ The biostratigraphic zone. (see Zone and Subzone within the [Macrostrat Interval
 
 [International age name](www.stratigraphy.org), at the finest level possible.
 
-**Examples:**
+Examples:
 
 - Ordovician
 - Aptian
@@ -418,7 +418,7 @@ _Dictionary/Dropdown_
 
 A restricted version of [Macrostrat Lithology Lexicon](https://dev.macrostrat.org/lex/lithologies) - focused on sedimentary rocks, and, for example, using the Dunham scheme only for carbonates.
 
-**Examples:**
+Examples:
 
 - Shale
 - Sandstone
@@ -430,7 +430,7 @@ _Dictionary/Dropdown_
 
 This is used to add a textural modifier to the base lithology. It should ONLY be used if it adds additional information, not to repeat the lithology (e.g., no need for "silty silstones").
 
-**Examples:**
+Examples:
 
 - Silty
 - Muddy
@@ -443,7 +443,7 @@ _Dictionary/Dropdown_
 
 This is used to add a compositional modifier to the base lithology. It should ONLY be used if it adds additional information, not to repeat the lithology (e.g., no need for "phosphatic phosphorites").
 
-**Examples:**
+Examples:
 
 - calcareous
 - siliceous
@@ -457,7 +457,7 @@ This is used to add a compositional modifier to the base lithology. It should ON
 
 Ideally a **single** color (black, grey, green), although modifiers are allowed, in which case, preferably use Munsell-style names e.g., Moderate reddish brown, Medium grey, Greyish black.
 
-**Examples:**
+Examples:
 
 - black
 - dark grey
@@ -470,7 +470,7 @@ _Validated_
 
 Whether or not the sample was burrowed, to any extent. This column will only allow 't' or 'f'.
 
-**Examples:**
+Examples:
 
 - t
 - f
@@ -479,7 +479,7 @@ Whether or not the sample was burrowed, to any extent. This column will only all
 
 Any fossils associated with the sample, to the highest level of identification available. Use a comma-separated list for multiple fossil types.
 
-**Examples:**
+Examples:
 
 - graptolites, brachiopods, bivalves
 - Leiosphaeridia crassa
@@ -492,7 +492,7 @@ _Dictionary_
 
 Any sedimentary structures associated with the sample - e.g. cross laminations, grading. The dictionary of sedimentary structures in the final tab should be used for reference. Please use terms exactly as reported, and use a comma-separated list for multiple sedimentary structures (A dropdown is not provided, since more than one term can apply to a single sample). (The dictionary was initially populated with some terms from [Macrostrat lexicon of lithology attributes](https://dev.macrostrat.org/lex/lith-atts)).
 
-**Examples:**
+Examples:
 
 - cross laminations
 - load casts
@@ -502,7 +502,7 @@ Any sedimentary structures associated with the sample - e.g. cross laminations, 
 
 Any notes about the lithology e.g., a more detailed description if you feel that the dictionary table values do not adequately describe the samples, or details of how the lithology was determined.
 
-**Examples:**
+Examples:
 
 - occasional small pyrite lags and/or phosphatic nodules (1-2mm)
 - Unknown if specific sample is bioturbated, but bioturbation and reworking common in column. Lithologies were determined using carbonate percent measurements from Marz et al., 2016. Samples considered limestone (CaCO3 > 80%) were labeled wackestone or lime mudstone based on strat columns in Ali Hussein et al., 2014. Many samples were considered marl in the strat column of Ali Hussein et al., 2014 but the carbonate percentage is considered a more accurate discriminator of lithology. Note there are many silicified beds and this is not well captured by the lithology coding.
@@ -518,7 +518,7 @@ An estimate for the age of the sample in millions of years. **Numerical value on
 
 Justification for the interpreted age provided. Ages can be interpreted to various levels of detail. For instance, the estimate can be based on an assumed sedimentation rate + linear interpolation, or groups of samples can be assigned an age based on proximity to a time marker (ash bed etc.). It is fine to note uncertainty or possible issues with the assignment, which could come in useful for refinements/updates at a later date.
 
-**Examples:**
+Examples:
 
 - Frasnian-Famennian boundary estimated at 475 meters in State Chester core--372.2 Ma in ICS chart 1/27/2016. Ages estimated above and below based on 50 kyr/m average shale depositional rate.
 - This formation is likely Middle Ordovician, and all samples are given an age of 465 Ma.
@@ -529,7 +529,7 @@ Justification for the interpreted age provided. Ages can be interpreted to vario
 
 An estimate for the maximum age of the sample in millions of years. **Numerical value only** with no modifiers or symbols (no age ranges, no < or >)
 
-**Examples:**
+Examples:
 
 - 343.50
 - 423
@@ -538,7 +538,7 @@ An estimate for the maximum age of the sample in millions of years. **Numerical 
 
 An estimate for the minimum age of the sample in millions of years. **Numerical value only** with no modifiers or symbols (no age ranges, no < or >)
 
-**Examples:**
+Examples:
 
 - 355
 - 419.20
@@ -547,7 +547,7 @@ An estimate for the minimum age of the sample in millions of years. **Numerical 
 
 The place where the physical sample is stored.
 
-**Examples:**
+Examples:
 
 - Department of Earth and Planetary Sciences, Yale University
 - British Geological Survey
@@ -556,7 +556,7 @@ The place where the physical sample is stored.
 
 The person responsible for the physical samples. Full name.
 
-**Examples:**
+Examples:
 
 - Erik Sperling
 - Rachel Wood
@@ -565,7 +565,7 @@ The person responsible for the physical samples. Full name.
 
 Any clarifications or comments about the sample - details that may not have been adequetly covered by the columns provided, or very specific to a particular study.
 
-**Examples:**
+Examples:
 
 - Original sample number from A. Knoll notebook. HU= Harvard University number.
 - Biostratigraphy extrapolated from nearby cores. See Remírez et al. (2023) for more details.
