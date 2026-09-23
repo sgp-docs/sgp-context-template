@@ -24,7 +24,7 @@ The template has five visible tabs:
 
 The **User Guide** provides information about how to fill the template - it is an abbreviated version of this document.
 
-The main sheets for data entry are **Sites** and **Samples**. Columns for these are described in the sections below, with real examples taken from the SGP database. Some are based on controlled vocabularies (dictionaries) and values must be chosen from a dropdown list (these are indicated as "Dropdown" in the descriptions below).
+The main sheets for data entry are **Sites** and **Samples**. Columns for these are described in the sections below, with real examples taken from the SGP database. Some are based on controlled vocabularies (dictionaries) and values must be chosen from a dropdown list (these are indicated as "Dictionary/Dropdown" in the descriptions below).
 
 The **PrepMethod** is used to collect information about how samples are prepared for analysis.
 
