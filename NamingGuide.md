@@ -16,7 +16,7 @@ In another example, SGP also contains two sets using the prefix **DL**: one deri
 
 ## General Recommendations
 
-- **Avoid overly simple identifiers.** Do not use names such as `1`, `2`, `3`, `Section 1`, or `Locality A` (SGP has nineteen samples called '1'!)
+- **Avoid overly simple identifiers.** Do not use names such as `1`, `2`, `3`, `Section 1`, or `Locality A` (SGP has nineteen samples called '1')
 - **Avoid easily confused characters.** In particular, be careful with `0/O`, `1/I/l`. For example, `DOL10` could easily be read as `D0LIO`.
 - **Use separators consistently and parsimoniously.** If you use hyphens, underscores, or another separator, use the same convention throughout.
 - **Avoid spearators that can be easily mis-interpreted.** Avoid slashes (/), backslashes (\), spaces, commas, semicolons, colons, and other punctuation that may have special meanings in filenames, URLs, spreadsheets, or software.
