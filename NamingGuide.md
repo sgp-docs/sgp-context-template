@@ -10,15 +10,18 @@ Taking care with local naming systems from the start can go a long way to help. 
 
 In particular, consider whether your names could be confused with names already used for the same site, section, or region. A name that is unique within one field notebook may not remain unique when combined with another dataset.
 
-For example, SGP contains two sets of samples with the prefix **LBZ**, both associated with a site named `Longbizui` but collected on different dates, by different collectors, and from different stratigraphic baselines. SGP therefore has two different samples called `LBZ-100`, and their associated metadata are sufficiently similar (same formation, same age bin, same lithology) that the names could easily cause confusion.
+For example, SGP contains two sets of samples with the prefix **LBZ**, from `Longbizui` but collected on different dates, by different collectors, and from different stratigraphic baselines. SGP therefore has two different samples called `LBZ-100`, and their associated metadata are sufficiently similar (same formation, same age bin, same lithology) that the names could easily cause confusion.
 
 In another example, SGP also contains two sets using the prefix **DL**: one derived from Dob's Linn and one from the collector David Loydell. However, in this case, the associated sample metadata are sufficiently distinct that the shared prefix is less problematic.
+
+SGP also has nineteen different samples called '1', five samples called 'L1' (from United Kingdom, Canada, China and Brazil), a sample called '4011/2' that Excel sometimes helpfully converts to Feb-4011, and many more examples besides.
 
 ## General Recommendations
 
 - **Avoid overly simple identifiers.** Do not use names such as `1`, `2`, `3`, `Section 1`, or `Locality A`.
 - **Avoid easily confused characters.** In particular, be careful with `0/O`, `1/I/l`. For example, `DOL10` could easily be read as `D0LIO`.
 - **Use separators consistently and parsimoniously.** If you use hyphens, underscores, or another separator, use the same convention throughout.
+- **Avoid spearators that can be easily mis-interpreted.** Avoid slashes (/), backslashes (\), spaces, commas, semicolons, colons, and other punctuation that may have special meanings in filenames, URLs, spreadsheets, or software.
 - **Avoid date-like names.** Names such as `06-01` can be automatically converted to dates in spreadsheets.
 - **Do not use depth or height as the sole identifier.** Record depth/height separately as a numerical value. It can also be incorporated into an alphanumeric sample name where useful.
 - **Check existing naming systems.** If other researchers have worked at the same site, section, or region, consider whether your proposed names could duplicate theirs.
@@ -33,7 +36,7 @@ Names or abbreviations based on the collector or project can also work well, pro
 
 ## Sample Names
 
-A sample name combining a short site identifier with a stratigraphic height or core depth can be useful—for example, `S1407-0.1`. Where a site name is longer, use a suitable abbreviation or project-specific code, such as `DL-01`, `DL-02`, `DL-03`.
+A sample name combining a short site identifier with a stratigraphic height or core depth can be useful—for example, `S1407-0.1`. Where a site name is longer, use a suitable abbreviation or project-specific code, such as `MCW-01`, `MCW-02`, `MCW-03`.
 
 This approach can make samples easier to track while retaining useful information about their position. However, **always record the numerical height or depth separately**, even when it is incorporated into the sample name. Differences in formatting or precision, such as `10.05` versus `10.1`, can otherwise make matching difficult.
 
