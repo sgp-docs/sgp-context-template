@@ -19,7 +19,7 @@ In another example, SGP also contains two sets using the prefix **DL**: one deri
 - **Avoid overly simple identifiers.** Do not use names such as `1`, `2`, `3`, `Section 1`, or `Locality A` (SGP has nineteen samples called '1')
 - **Avoid easily confused characters.** In particular, be careful with `0/O`, `1/I/l`. For example, `DOL10` could easily be read as `D0LIO`.
 - **Use separators consistently and parsimoniously.** If you use hyphens, underscores, or another separator, use the same convention throughout.
-- **Avoid spearators that can be easily mis-interpreted.** Avoid slashes (/), backslashes ('\'), spaces, commas, semicolons, colons, and other punctuation that may have special meanings in filenames, URLs, spreadsheets, or software.
+- **Avoid spearators that can be easily mis-interpreted.** Avoid slashes (/), backslashes (\\), spaces, commas, semicolons, colons, and other punctuation that may have special meanings in filenames, URLs, spreadsheets, or software.
 - **Avoid date-like names.** Names such as `06-01` can be automatically converted to dates in spreadsheets (SGP has a sample 4011/2 which Excel converts to Feb-4011 if care is not taken)
 - **Do not use depth or height as the sole identifier.** Record depth/height separately as a numerical value. It can also be incorporated into an alphanumeric sample name where useful.
 - **Check existing naming systems.** If other researchers have worked at the same site, section, or region, consider whether your proposed names could duplicate theirs.
