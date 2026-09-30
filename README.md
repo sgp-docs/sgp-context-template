@@ -42,13 +42,13 @@ Samples can be collected from the same site at different times by different peop
 
 #### section name
 
-The name of the outcrop or the core.
+The name of the outcrop or the core. (See [Naming Guide])
 
 **Core** names are usually formalized when the core is made - use the name as recorded by the core storage facility, or core creator.
 
 For **outcrops** use the name as reported in any published paper, in particular corresponding to any figures or tables. (If the same site has been given different names in different papers, please provide that information in the notes field at the end of the sheet - "alternative site names" can be recorded in the database).
 
-If a new collection is undertaken in the same area but from a different stratigraphic baseline, give that site a new name and a new set of coordinates, measured from the new baseline.
+If a new collection is undertaken in the same area but from a different stratigraphic baseline, ideally give that site a new name and a new set of coordinates, measured from the new baseline.
 
 Examples:
 
@@ -77,7 +77,8 @@ Examples:
 
 - United States
 - Canada
-- Australia
+- Nigeria
+- Brazil
 
 #### state or province
 
@@ -257,7 +258,7 @@ In SGP we are primarily dealing with rock hand samples, which are subsequently p
 
 #### parent sample number
 
-Rarely used, but if the samples are sub-samples, especially if multiple "child" samples were measured from one parent, then give the name of the parent sample here. Note the parent sample must ALSO have a row in the template, or exist in the database already.
+Rarely used, but if the samples are sub-samples, especially if multiple "child" samples were measured from one parent, then give the name of the parent sample here. Note the parent sample must **ALSO** have a row in the template, or exist in the database already.
 
 Examples:
 
@@ -266,7 +267,7 @@ Examples:
 
 #### original sample number
 
-The name or number of the sample, as it is published - in particular corresponding exactly to any associated data tables.
+The name or number of the sample, as it is published. In particular, sample names should correspond exactly to any associated data tables, in order for data to accurately linked. See [SGP Naming Guidelines].
 
 Examples:
 
@@ -396,7 +397,7 @@ Examples:
 
 #### biostratigraphy
 
-The biostratigraphic zone. (see Zone and Subzone within the [Macrostrat Intervals lexicon](https://dev.macrostrat.org/lex/intervals) - e.g. [Aulacostephanus eudoxus](https://dev.macrostrat.org/lex/intervals/841)).
+The biostratigraphic zone. If possible use formal/standard zone names (see e.g. Zone and Subzone within the [Macrostrat Intervals lexicon](https://dev.macrostrat.org/lex/intervals) - e.g. [Aulacostephanus eudoxus](https://dev.macrostrat.org/lex/intervals/841)).
 
 Examples:
 
@@ -416,7 +417,7 @@ Examples:
 
 _Dictionary/Dropdown_
 
-A restricted version of [Macrostrat Lithology Lexicon](https://dev.macrostrat.org/lex/lithologies) - focused on sedimentary rocks, and, for example, using the Dunham scheme only for carbonates.
+A restricted version of [Macrostrat Lithology Lexicon](https://dev.macrostrat.org/lex/lithologies) - focused on sedimentary rocks, and using the Dunham scheme only for carbonates. Note that lime mudstone is the Dunham classification term for a limestone composed primarily of carbonate mud.
 
 Examples:
 
@@ -441,7 +442,7 @@ Examples:
 
 _Dictionary/Dropdown_
 
-This is used to add a compositional modifier to the base lithology. It should ONLY be used if it adds additional information, not to repeat the lithology (e.g., no need for "phosphatic phosphorites").
+This is used to add a compositional modifier to the base lithology. It should ONLY be used if it adds additional information, not to repeat the lithology (e.g., no need for "phosphatic phosphorites” or “calcareous wackestone”). Note also that “siliceous” refers to a cherty component rather than being a siliciclastic sediment.
 
 Examples:
 
@@ -509,7 +510,7 @@ Examples:
 
 #### interpreted age (Ma)
 
-An estimate for the age of the sample in millions of years. **Numerical value only** with no modifiers or symbols (no age ranges, no < or >)
+A single **numerical** estimate for the age of the sample in millions of years. Numerical value only with no modifiers or symbols (no age ranges, no < or >). Providing a single absolute age to a sample may feel overly precise but that is required for this field. Confidence and/or uncertainty can be quantified in the age justification and minimum/maximum ages.
 
 Examples:
 
@@ -524,7 +525,7 @@ Examples:
 
 - Frasnian-Famennian boundary estimated at 475 meters in State Chester core--372.2 Ma in ICS chart 1/27/2016. Ages estimated above and below based on 50 kyr/m average shale depositional rate.
 - This formation is likely Middle Ordovician, and all samples are given an age of 465 Ma.
-- Tapley Hill Fm. records post-glacial (Sturtian) deposition (Preiss, 2000; Preiss et al., 2011) and is conservatively between 660–640 Ma. Interpreted age is taken from the Re-Os age of 645 +- 4.8 Ma on lower strata of the Tapley Hill Fm. from the Blinman-2 core (Kendal et al., 2006).
+- Tapley Hill Fm. records post-glacial (Sturtian) deposition (Preiss, 2000; Preiss et al., 2011) and is conservatively between 660–640 Ma. Interpreted age is taken from the Re-Os age of 645 +- 4.8 Ma on lower strata of the Tapley Hill Fm. from the Blinman-2 core (Kendall et al., 2006).
 - There are no good age constraints on the Papoose Creek Formation. Sample was given an age of 615 Ma based on the correlation figure of Macdonald et al., 2023
 
 #### maximum age
@@ -560,8 +561,8 @@ The person responsible for the physical samples. Full name.
 
 Examples:
 
-- Erik Sperling
 - Rachel Wood
+- Fabrício Caxito
 
 #### notes
 
