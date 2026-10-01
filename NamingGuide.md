@@ -12,7 +12,7 @@ In particular, consider whether your names could be confused with names already 
 
 For example, SGP contains two sets of samples with the prefix **LBZ**, from `Longbizui` but collected on different dates, by different collectors, and from different stratigraphic baselines. SGP therefore has two different samples called `LBZ-100`, and their associated metadata are sufficiently similar (same formation, same age bin, same lithology) that the names could easily cause confusion.
 
-In another example, SGP also contains two sets using the prefix **DL**: one derived from Dob's Linn and one from the collector David Loydell. However, in this case, the associated sample metadata are distinct, so the shared prefix is less problematic.
+By contrast, SGP also contains two sets of samples using the prefix **DL**: one derived from `Dob's Linn` and one from the collector `David Loydell`. In this case, however, the associated sample metadata are distinct, so the shared prefix is less problematic.
 
 ## General Recommendations
 
@@ -21,7 +21,7 @@ In another example, SGP also contains two sets using the prefix **DL**: one deri
 - **Use separators consistently and parsimoniously.** If you use hyphens, underscores, or another separator, use the same convention throughout.
 - **Avoid spearators that can be easily mis-interpreted.** Avoid slashes (/), backslashes (\\), spaces, commas, semicolons, colons, and other punctuation that may have special meanings in filenames, URLs, spreadsheets, or software.
 - **Avoid date-like names.** Names such as `06-01` can be automatically converted to dates in spreadsheets (SGP has a sample 4011/2 which Excel converts to Feb-4011)
-- **Do not use depth or height as the sole identifier.** Record depth/height separately as a numerical value. It can also be incorporated into an alphanumeric sample name where useful.
+- **Do not use depth or height as the sole identifier.** Record depth/height separately as a numerical value. It can also be incorporated into an alphanumeric sample name where useful. Differences in formatting or precision, such as `10.05` in one data sheet versus `10.1` in another, can make matching difficult.
 - **Check existing naming systems.** If other researchers have worked at the same site, section, or region, consider whether your proposed names could duplicate theirs.
 
 ## Site Names
@@ -34,8 +34,6 @@ Names or abbreviations based on the collector or project can also work well, pro
 
 ## Sample Names
 
-A sample name combining a short site identifier with a stratigraphic height or core depth can be useful—for example, `S1407-0.1`. Where a site name is longer, use a suitable abbreviation or project-specific code, such as `MCW-01`, `MCW-02`, `MCW-03`.
+A sample name combining a short site identifier with a stratigraphic height or core depth can be useful—for example, `S1407-0.1`. This approach can make samples easier to track while retaining useful information about their position. However, **always record the numerical height or depth separately**, even when it is incorporated into the sample name. Where a site name is longer, use a suitable abbreviation or project-specific code, such as `MCW-01`, `MCW-02`, `MCW-03`.
 
-This approach can make samples easier to track while retaining useful information about their position. However, **always record the numerical height or depth separately**, even when it is incorporated into the sample name. Differences in formatting or precision, such as `10.05` versus `10.1`, can otherwise make matching difficult.
-
-Most importantly, consider whether the resulting names will still be distinctive **outside your immediate project**. A small amount of additional information in a name can prevent substantial problems when datasets are combined later.
+Most importantly is to consider whether the resulting names will still be distinctive **outside your immediate project**. A small amount of additional information in a name can prevent substantial problems when datasets are combined later. Three or four character prefixes are better than one or two - unsuprisingly, in SGP samples with one letter + number combination (e.g. C1) appear in duplicate more often than two letter + number combinations (e.g. DL-1), whereas three letter + number combinations rarely, if ever, appear.
