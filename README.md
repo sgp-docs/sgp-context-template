@@ -187,7 +187,7 @@ _Dictionary/Dropdown_
 
 Sites are sorted into three low-grade metamorphic bins, roughly based on metapelite zones as follows:
 
-1. Diagenetic zone. Under mature, preserved biomarkers, KI>0.42, CAI ≤3, Ro <2.0, facies: zeolite-subgreenschist facies, grade: diagenesis-very low grade
+1. Diagenetic zone. Under mature to post-mature (up to wet gas and condensate window), biomarkers may be preserved, KI>0.42, CAI ≤3, Ro <2.0, facies: zeolite-subgreenschist facies, grade: diagenesis-very low grade
 
 2. Anchizone. Over-mature, no preserved biomarkers, CAI=4, Ro 2-4, facies: sub-greenschist, grade: very low grade
 
