@@ -19,7 +19,7 @@ The template has five visible tabs:
 - User Guide
 - Sites
 - Samples
-- PrepMethod
+- Prep Method
 - Dictionary of Sed Structures
 
 The **User Guide** provides information about how to fill the template - it is an abbreviated version of this document.
@@ -574,9 +574,9 @@ Examples:
 - Biostratigraphy extrapolated from nearby cores. See Remírez et al. (2023) for more details.
 - < 15m below interval of bedded massive sulphides
 
-## PrepMethod
+## Prep Method
 
-PrepMethod records information about how a sample was prepared for analysis, such as grinding in a tungsten carbide shatterbox or an agate mortar. We collect this information here because sample preparation is an important part of the analytical methodology, but it is frequently omitted from published methods sections.
+Prep Method records information about how a sample was prepared for analysis, such as grinding in a tungsten carbide shatterbox or an agate mortar. We collect this information here because sample preparation is an important part of the analytical methodology, but it is frequently omitted from published methods sections.
 
 In most cases, a single preparation method will have been used for all analyses of a set of samples. In this case, simply provide the preparation method once. However, different preparation methods may sometimes be used for different analyses, for example if analyses were carried out in different laboratories. This is why PrepMethod is not a single column on the sample tab: a sample may have more than one preparation method associated with its analytical data.
 
