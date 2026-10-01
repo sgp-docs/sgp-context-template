@@ -42,7 +42,7 @@ Samples can be collected from the same site at different times by different peop
 
 #### section name
 
-The name of the outcrop or the core. (See [Naming Guide])
+The name of the outcrop or the core. (See SGP [Naming Guide](https://github.com/sgp-docs/sgp-context-template/blob/aa1b7d4f0481adda26d7c175a99f843328d6fa5b/NamingGuide.md))
 
 **Core** names are usually formalized when the core is made - use the name as recorded by the core storage facility, or core creator.
 
@@ -267,7 +267,7 @@ Examples:
 
 #### original sample number
 
-The name or number of the sample, as it is published. In particular, sample names should correspond exactly to any associated data tables, in order for data to accurately linked. See [SGP Naming Guidelines].
+The name or number of the sample, as it is published. In particular, sample names should correspond exactly to any associated data tables, in order for data to accurately linked. (See SGP [Naming Guide](https://github.com/sgp-docs/sgp-context-template/blob/aa1b7d4f0481adda26d7c175a99f843328d6fa5b/NamingGuide.md)).
 
 Examples:
 
