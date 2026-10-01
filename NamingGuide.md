@@ -17,11 +17,12 @@ By contrast, SGP also contains two sets of samples using the prefix **DL**: one 
 ## General Recommendations
 
 - **Avoid overly simple identifiers.** Do not use names such as `1`, `2`, `3`, `Section 1`, or `Locality A` (SGP has nineteen samples called '1')
+- **Avoid overly complex identifiers.** Do not try to put all of the sample information into the name. (SGP has a sample called 'DDH186 J 146,7m (Rh1) black shale' - the chances of mis-transcription from one dataset to another are very high).
 - **Avoid easily confused characters.** In particular, be careful with `0/O`, `1/I/l`. For example, `DOL10` could easily be read as `D0LIO`.
 - **Use separators consistently and parsimoniously.** If you use hyphens, underscores, or another separator, use the same convention throughout.
-- **Avoid spearators that can be easily mis-interpreted.** Avoid slashes (/), backslashes (\\), spaces, commas, semicolons, colons, and other punctuation that may have special meanings in filenames, URLs, spreadsheets, or software.
-- **Avoid date-like names.** Names such as `06-01` can be automatically converted to dates in spreadsheets (SGP has a sample 4011/2 which Excel converts to Feb-4011)
-- **Do not use depth or height as the sole identifier.** Record depth/height separately as a numerical value. It can also be incorporated into an alphanumeric sample name where useful. Differences in formatting or precision, such as `10.05` in one data sheet versus `10.1` in another, can make matching difficult.
+- **Avoid separators that can be easily mis-interpreted.** Avoid slashes (/), backslashes (\\), spaces, commas, semicolons, colons, and other punctuation that may have special meanings in filenames, URLs, spreadsheets, or software.
+- **Avoid date-like names.** Names such as `06-01` can be automatically converted to dates in spreadsheets (it is not always so obvious - SGP has a sample 4011/2 which Excel converts to Feb-4011)
+- **Do not use depth or height as the sole identifier.** Record depth/height separately as a numerical value. Differences in formatting or precision, such as `10.05` in one data sheet versus `10.1` in another, can make matching difficult, especially if samples were collected in close proximity to each other.
 - **Check existing naming systems.** If other researchers have worked at the same site, section, or region, consider whether your proposed names could duplicate theirs.
 
 ## Site Names
@@ -34,6 +35,6 @@ Names or abbreviations based on the collector or project can also work well, pro
 
 ## Sample Names
 
-A sample name combining a short site identifier with a stratigraphic height or core depth can be useful—for example, `S1407-0.1`. This approach can make samples easier to track while retaining useful information about their position. However, **always record the numerical height or depth separately**, even when it is incorporated into the sample name. Where a site name is longer, use a suitable abbreviation or project-specific code, such as `MCW-01`, `MCW-02`, `MCW-03`.
+A sample name combining a short site identifier with a stratigraphic height or core depth can be useful - for example, `S1407-0.1`. This approach can make samples easier to track while retaining useful information about their position. However, **always record the numerical height or depth separately**, even when it is incorporated into the sample name. Where a site name is longer, use a suitable abbreviation or project-specific code, such as `MCW-01`, `MCW-02`, `MCW-03`.
 
-Most importantly is to consider whether the resulting names will still be distinctive **outside your immediate project**. A small amount of additional information in a name can prevent substantial problems when datasets are combined later. Three or four character prefixes are better than one or two - unsuprisingly, in SGP samples with one letter + number combination (e.g. C1) appear in duplicate more often than two letter + number combinations (e.g. DL-1), whereas three letter + number combinations rarely, if ever, appear.
+Consider again whether the resulting names will still be distinctive **outside your immediate project**. A small amount of additional information in a name, while still keeping it simple, can be helpful. For example, three or four character prefixes are better than one or two - unsuprisingly, in SGP samples with one letter + number combination (e.g. C1) appear in duplicate more often than two letter + number combinations (e.g. DL-1), and three letter + number combinations rarely, if ever, appear twice.
