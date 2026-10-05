@@ -10,7 +10,7 @@ Taking care with local naming systems from the start can go a long way to help. 
 
 In particular, consider whether your names could be confused with names already used for the same site, section, or region. A name that is unique within one field notebook may not remain unique when combined with another dataset. With these kind of identifiers we are not expecting global uniqueness, but it is nevertheless helpful if the immediate likely overlaps are considered.
 
-For example, SGP contains two sets of samples with the prefix **LBZ**, from `Longbizui` but collected on different dates, by different collectors, and from different stratigraphic baselines. SGP therefore has two different samples called `LBZ-100`, two `LBZ-102` etc., and their associated metadata are sufficiently similar (same formation, same age bin, same lithology) that the names could easily cause confusion.
+For example, SGP contains three sets of samples with the prefix **LBZ**, from `Longbizui` but collected on different dates, by different collectors, and from different stratigraphic baselines. SGP therefore has, for example, two different samples called `LBZ-100`, and their associated metadata are sufficiently similar (same formation, same age bin, same lithology) that the names could easily cause confusion.
 
 By contrast, SGP also contains two sets of samples using the prefix **DL**: one derived from `Dob's Linn` and one from the collector `David Loydell`. In this case, however, the associated sample metadata are distinct, so the shared prefix is less problematic.
 
